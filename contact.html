@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pancake Robots-Contact</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+	<style>
+		#header {
+			font-family: Homework;
+			font-size: 30px;
+			text-align: center;
+		}
+		html, body{
+			margin: 0;
+		}
+		body {
+		font-family: 'Saira Condensed', sans-serif;
+		background-color: ivory;
+		padding: 10px;
+		}
+		@font-face {
+			font-family: "Homework";
+			src: url("Homework.ttf");
+		}
+		.form-row {
+			margin-bottom: 10px; 
+		}
+		.button-row {
+			text-align: center;
+		}
+		.prompt {
+			width: 300px;
+			float: left;
+			text-align: right;
+			margin-right: 10px;
+		}
+		input[type=text] {
+			height: 20px;
+			width: 200px;
+			border: 1px solid blue;
+		}
+		input[type=password] {
+			height: 20px;
+			width: 200px;
+			border: 1px solid blue;
+		}
+		textarea {
+			border: 1px solid black;
+			height: 100px;
+			width: 200px
+		}
+		form {
+			width: 700px;
+			margin-right: auto;
+			margin-left: auto;
+			background-color: #5DCFBF;
+			border-radius: 15px;
+			padding: 10px;
+		}
+		#nav{
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px;
+		}
+		#nav a{
+			width: 115px;
+			display: block;
+			background-color:#5DCFBF;
+			text-align: center;
+			padding: 10px;
+			box-sizing: border-box;
+			float:left;
+			text-decoration: none;
+			color: black;
+		}
+		#nav a:hover{
+			background-color: orange;
+		}
+		#nav:after{
+			content:"";
+			clear: both;
+			display: table;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>The Pancake Robots-Contact</h1>
+	</div>
+	<div id="nav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="team.html">Team</a>
+		<a href="history.html">Team History</a>
+		<a href="projects.html">Projects</a>
+		<a href="outreach.html">Outreach</a>
+		<a href="sponsors.html">Sponsors</a>
+		<a href="contact.html">Contact</a>
+	</div>
+
+	<form action="thankyou.html" method="POST">
+
+	<div class="form-row">
+		<label for="name-imput" class="prompt">Name:</label>
+		<input id="name-imput"type="text" placeholder="Type Name Here">
+	</div>
+	<div class="form-row">
+		<label for="email-imput" class="prompt">Email Adress:</label>
+		<input id="email-imput"type="text" placeholder="Type Email Adress Here">
+	</div>
+
+	<!---<div class="form-row">
+			<label for="question" class="right-label">Question:</label>
+			<input type="radio">
+			<label>Option</label>
+			<input type="radio">
+			<label>Option</label>
+			<input type="radio">
+			<label>Option</label>
+	</div>--->
+	
+	<div class="form-row">
+		<label for="question" class="prompt">Enter your message here:</label>
+		<textarea id="question"></textarea>
+	</div>
+
+	<div class="button-row">
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+	</div>
+	</form>
+</body>
+</html>

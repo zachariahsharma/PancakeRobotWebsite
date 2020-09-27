@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pancake Robots-Team</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+	<style>
+		#meettheteam{
+			font-family: Homework;
+			font-size: 45px;
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		#main {
+			display: flex;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			align-items: center;
+		}
+		#pictures {
+			width: 50%;
+			margin-right: 3%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		#pictures img {
+			width: 150px;
+			/*margin: 10px;*/
+			border-radius: 50%;
+			box-sizing: border-box;
+			transition: all 0.5s;
+		}
+		.person:hover img{
+			opacity: 0.3;
+			border-color: black;
+		}
+		.person{
+			position: relative;
+			width: 150px;
+			height: 150px;
+			margin: 10px;
+		}
+		.person .overlay{
+			opacity: 0;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 150px;
+			height: 150px;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			font-size: 30px;
+			font-family: Homework;
+			transition: all 0.5s;
+			border: 4px solid black;
+		}
+		.person:hover .overlay{
+			opacity: 1;
+		}
+		.b-darkorange{
+			border: 4px solid #FF9F1C;
+		}
+		.b-lightorange{
+			border: 4px solid #FFBF69;
+		}
+		.b-lightblue{
+			border: 4px solid #CBF3F0;
+		}
+		.b-darkblue{
+			border: 4px solid #2EC4B6;
+		}
+		.line{
+			width: .25%;
+			background-color: black;
+			height: 550px;
+		}
+		#spotlight {
+			width: 41%;
+			margin-left: 5%;
+			/*background-color: red;*/
+			height: 600px;
+		}
+		#spotlight img {
+			border-radius: 50%;
+			width: 350px;
+			border: 4px solid black;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		#spotlight-name{
+			font-family: Homework;
+			font-size: 35px;
+			text-align: center;
+			margin-top: 15px;
+			margin-bottom: 10px;
+			font-weight: normal;
+		}
+		#spotlight-bio{
+			font-size: 18px;
+			text-align: center;
+			margin-top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>The Pancake Robots-Our Team</h1>
+	</div>
+	<div id="nav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="team.html">Team</a>
+		<a href="history.html">Team History</a>
+		<a href="projects.html">Projects</a>
+		<a href="outreach.html">Outreach</a>
+		<a href="sponsors.html">Sponsors</a>
+		<a href="contact.html">Contact</a>
+	</div>
+
+	<div id="meettheteam">
+		Meet the Team!
+	</div>
+
+	<div id="main">
+		<div id="pictures">
+			<div class="person">
+				<img class="b-darkorange" src="pancake_website/placeholder.jpg" alt="Shannon">
+				<div class="overlay">Shannon</div>
+			</div>
+
+			<div class="person">
+				<img class="b-lightorange" src="pancake_website/placeholder.jpg" alt="Mihir">
+				<div class="overlay">Mihir</div>
+			</div>
+
+			<div class="person">
+				<img class="b-darkblue" src="pancake_website/placeholder.jpg" alt="Mehr">
+				<div class="overlay">Mehr</div>
+			</div>
+
+			<div class="person">
+				<img class="b-lightblue" src="pancake_website/rahul.jpg" alt="Rahul">
+				<div class="overlay">Rahul</div>
+			</div>
+
+			<div class="person">
+				<img class="b-darkorange" src="pancake_website/placeholder.jpg" alt="Saurish">
+				<div class="overlay">Saurish</div>
+			</div>
+
+			<div class="person">
+				<img class="b-lightorange" src="pancake_website/placeholder.jpg" alt="Sahil">
+				<div class="overlay">Sahil</div>
+			</div>
+
+			<div class="person">
+				<img class="b-darkblue" src="pancake_website/placeholder.jpg" alt="Emma">
+				<div class="overlay">Emma</div>
+			</div>
+
+			<div class="person">
+				<img class="b-lightblue" src="pancake_website/placeholder.jpg" alt="Zach">
+				<div class="overlay">Zach</div>
+			</div>
+
+			<div class="person">
+				<img class="b-darkorange" src="pancake_website/placeholder.jpg" alt="Pranav">
+				<div class="overlay">Pranav</div>
+			</div>
+
+			<div class="person">
+				<img class="b-lightorange" src="pancake_website/placeholder.jpg" alt="Robert">
+				<div class="overlay">Robert</div>
+			</div>
+
+		</div>	
+
+		<div class="line"></div>
+
+		<div id="spotlight">
+			<img src="pancake_website/placeholder.jpg">
+			<h4 id="spotlight-name">Coach Shannon</h4>
+			<h5 id="spotlight-bio">bio on coach shannon</h5>
+
+		</div>
+	</div>
+</body>
+</html>
+<!--Our group is more than just a competition team. We are all best friends too. We play around, have our inside jokes, and simply love to be around each other because of our tight bond. We knew each other even before FLL and some of us have known each other's family's since before we can remember. Our friendship is fueled by hard-working, determination to do our best, and enjoying what we do.-->
