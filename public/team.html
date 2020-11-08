@@ -4,6 +4,7 @@
 	<title>Pancake Robots-Team</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./favicons.ico" type="image/x-icon">
 	<style>
 		#meettheteam{
 			font-family: Homework;
@@ -94,7 +95,7 @@
 			margin-right: auto;
 			display: block;
 		}
-		#spotlight-name{
+		.spotlight-name{
 			font-family: Homework;
 			font-size: 35px;
 			text-align: center;
@@ -131,52 +132,52 @@
 	<div id="main">
 		<div id="pictures">
 			<div class="person">
-				<img class="b-darkorange" src="pancake_website/placeholder.jpg" alt="Shannon">
+				<img class="b-darkorange" src="./vid_files/placeholder.jpg" alt="Shannon">
 				<div class="overlay">Shannon</div>
 			</div>
 
 			<div class="person">
-				<img class="b-lightorange" src="pancake_website/placeholder.jpg" alt="Mihir">
+				<img class="b-lightorange" src="./vid_files/mihir.jpg" alt="Mihir">
 				<div class="overlay">Mihir</div>
 			</div>
 
 			<div class="person">
-				<img class="b-darkblue" src="pancake_website/placeholder.jpg" alt="Mehr">
+				<img class="b-darkblue" src="./vid_files/mehr.jpg" alt="Mehr">
 				<div class="overlay">Mehr</div>
 			</div>
 
 			<div class="person">
-				<img class="b-lightblue" src="pancake_website/rahul.jpg" alt="Rahul">
+				<img class="b-lightblue" src="./vid_files/Rahul.jpg" alt="Rahul">
 				<div class="overlay">Rahul</div>
 			</div>
 
 			<div class="person">
-				<img class="b-darkorange" src="pancake_website/placeholder.jpg" alt="Saurish">
+				<img class="b-darkorange" src="./vid_files/Saurish.jpg" alt="Saurish">
 				<div class="overlay">Saurish</div>
 			</div>
 
 			<div class="person">
-				<img class="b-lightorange" src="pancake_website/placeholder.jpg" alt="Sahil">
+				<img class="b-lightorange" src="./vid_files/Sahil.jpg" alt="Sahil">
 				<div class="overlay">Sahil</div>
 			</div>
 
 			<div class="person">
-				<img class="b-darkblue" src="pancake_website/placeholder.jpg" alt="Emma">
+				<img class="b-darkblue" src="./vid_files/emma.jpg" alt="Emma">
 				<div class="overlay">Emma</div>
 			</div>
 
 			<div class="person">
-				<img class="b-lightblue" src="pancake_website/placeholder.jpg" alt="Zach">
+				<img class="b-lightblue" src="./vid_files/Zach.jpg" alt="Zach">
 				<div class="overlay">Zach</div>
 			</div>
 
 			<div class="person">
-				<img class="b-darkorange" src="pancake_website/placeholder.jpg" alt="Pranav">
+				<img class="b-darkorange" src="./vid_files/placeholder.jpg" alt="Pranav">
 				<div class="overlay">Pranav</div>
 			</div>
 
 			<div class="person">
-				<img class="b-lightorange" src="pancake_website/placeholder.jpg" alt="Robert">
+				<img class="b-lightorange" src="./vid_files/placeholder.jpg" alt="Robert">
 				<div class="overlay">Robert</div>
 			</div>
 
@@ -185,12 +186,30 @@
 		<div class="line"></div>
 
 		<div id="spotlight">
-			<img src="pancake_website/placeholder.jpg">
-			<h4 id="spotlight-name">Coach Shannon</h4>
+			<img src="./vid_files/placeholder.jpg">
+			<h4 class="spotlight-name">Coach Shannon</h4>
 			<h5 id="spotlight-bio">bio on coach shannon</h5>
 
 		</div>
 	</div>
+	<script>
+		const people = document.querySelectorAll('.person');
+		const spotlight = document.querySelector('#spotlight');
+		let img;
+		let header;
+		people.forEach((person) => {
+			person.addEventListener('click', function() {
+				spotlight.innerHTML = ''
+				img = document.createElement('img')
+				img.src = `${person.firstElementChild.src}`
+				header = document.createElement('h4')
+				header.classList.add('spotlight-name')
+				header.textContent = `${person.querySelector('div').textContent}`
+				spotlight.appendChild(img)
+				spotlight.appendChild(header)
+			})
+		})
+	</script>
 </body>
 </html>
 <!--Our group is more than just a competition team. We are all best friends too. We play around, have our inside jokes, and simply love to be around each other because of our tight bond. We knew each other even before FLL and some of us have known each other's family's since before we can remember. Our friendship is fueled by hard-working, determination to do our best, and enjoying what we do.-->

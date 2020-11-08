@@ -4,6 +4,7 @@
 	<title>Pancake Robots-Contact</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./favicons.ico" type="image/x-icon">
 	<style>
 		#header {
 			font-family: Homework;
@@ -34,7 +35,7 @@
 			text-align: right;
 			margin-right: 10px;
 		}
-		input[type=text] {
+		input[type=text] input[type=email]{
 			height: 20px;
 			width: 200px;
 			border: 1px solid blue;
@@ -99,7 +100,7 @@
 		<a href="contact.html">Contact</a>
 	</div>
 
-	<form action="thankyou.html" method="POST">
+	<form id="form">
 
 	<div class="form-row">
 		<label for="name-imput" class="prompt">Name:</label>
@@ -107,7 +108,7 @@
 	</div>
 	<div class="form-row">
 		<label for="email-imput" class="prompt">Email Adress:</label>
-		<input id="email-imput"type="text" placeholder="Type Email Adress Here">
+		<input id="email-imput"type="email" placeholder="Type Email Adress Here">
 	</div>
 
 	<!---<div class="form-row">
@@ -130,5 +131,16 @@
 			<button type="reset">Reset</button>
 	</div>
 	</form>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/8.0.1/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="/__/firebase/8.0.1/firebase-analytics.js"></script>
+	<script src="/__/firebase/8.0.1/firebase-firestore.js"></script>
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+	<script src="./contact.js"></script>
 </body>
 </html>

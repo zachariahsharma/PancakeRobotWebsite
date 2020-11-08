@@ -1,5 +1,14 @@
 {
+  "name": "pancakerobotwebsite",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "firebase emulators:start",
+    "start": "firebase deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "firebase-tools": "^8.15.1"
+    "firebase-tools": "^8.15.1",
   }
 }
