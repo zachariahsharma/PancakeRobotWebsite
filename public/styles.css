@@ -1,43 +1,44 @@
-		#header {
-			font-family: Homework;
-			font-size: 40px;
-			text-align: center;
-		}
-		@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-		html, body{
-			margin: 0;
-		}
-		body {
-		font-family: 'Saira Condensed', sans-serif;
-		background-color: white;
-		}
-		@font-face {
-			font-family: "Homework";
-			src: url("Homework.ttf");
-		}
-		#nav{
-			width: 920px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 20px;
-			background: linear-gradient(5deg, #CBF3F0 15%,#2EC4B6 80%);
-		}
-		#nav a{
-			width: 115px;
-			display: block;
-			/*background-color:#FFBF69;*/
-			text-align: center;
-			padding: 10px;
-			box-sizing: border-box;
-			float:left;
-			text-decoration: none;
-			color: black;
-		}
-		#nav a:hover{
-			background-color: #FFBF69;
-		}
-		#nav:after{
-			content:"";
-			clear: both;
-			display: table;
-		}
+#header {
+  font-family: Homework;
+  font-size: 40px;
+  text-align: center;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+html,
+body {
+  margin: 0;
+}
+body {
+  font-family: "Saira Condensed", sans-serif;
+  background-color: white;
+}
+@font-face {
+  font-family: "Homework";
+  src: url("Homework.ttf");
+}
+#nav {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background: linear-gradient(5deg, #cbf3f0 15%, #2ec4b6 80%);
+}
+#nav a {
+  width: 125px;
+  display: block;
+  /*background-color:#FFBF69;*/
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+  text-decoration: none;
+  color: black;
+}
+#nav a:hover {
+  background-color: #ffbf69;
+}
+#nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}

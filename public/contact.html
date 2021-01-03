@@ -5,6 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="./favicons.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<style>
 		#header {
 			font-family: Homework;
@@ -51,10 +57,10 @@
 			width: 200px
 		}
 		form {
-			width: 700px;
+			width: 50%;
 			margin-right: auto;
 			margin-left: auto;
-			background-color: #5DCFBF;
+			border: #5DCFBF 5px solid;
 			border-radius: 15px;
 			padding: 10px;
 		}
@@ -101,14 +107,13 @@
 	</div>
 
 	<form id="form">
-
-	<div class="form-row">
-		<label for="name-imput" class="prompt">Name:</label>
-		<input id="name-imput"type="text" placeholder="Type Name Here">
+	<div class="row form-row input-field">
+		<label for="name-imput" class="prompt">Type Name Here</label>
+		<input id="name-imput"type="text">
 	</div>
-	<div class="form-row">
-		<label for="email-imput" class="prompt">Email Adress:</label>
-		<input id="email-imput"type="email" placeholder="Type Email Adress Here">
+	<div class="form-row row input-field">
+		<label for="email-imput" class="prompt">Type Email Adress Here</label>
+		<input id="email-imput"type="email" class="validate">
 	</div>
 
 	<!---<div class="form-row">
@@ -121,16 +126,20 @@
 			<label>Option</label>
 	</div>--->
 	
-	<div class="form-row">
+	<div class="form-row row input-field">
 		<label for="question" class="prompt">Enter your message here:</label>
-		<textarea id="question"></textarea>
+		<textarea id="question" class="materialize-textarea"></textarea>
 	</div>
 
 	<div class="button-row">
-			<button type="submit">Submit</button>
-			<button type="reset">Reset</button>
+			<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+				<i class="material-icons right">send</i>
+		  	</button>
+			  <button class="btn waves-effect waves-light" type="reset" name="action">Reset</button>
 	</div>
 	</form>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="/__/firebase/8.0.1/firebase-app.js"></script>
 
